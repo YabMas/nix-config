@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   users.users.jaamaask.home = "/Users/jaamaask";
+  users.users.yabmaz.home = "/Users/yabmaz";
   # here go the darwin preferences and config items
   programs.zsh.enable = true;
   environment = {
