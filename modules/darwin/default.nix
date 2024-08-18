@@ -52,6 +52,7 @@
     "fnm"
     "clojure"
     "python-setuptools" # https://stackoverflow.com/questions/69919970/no-module-named-distutils-but-distutils-installed
+    "graphviz"
     "syncthing"
     ];
     casks = 
