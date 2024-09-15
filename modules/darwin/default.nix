@@ -45,6 +45,8 @@
     "node@20"
     "yarn"
     "borkdude/brew/babashka"
+    "borkdude/brew/clj-kondo"
+    "borkdude/brew/jet"
     "autojump"
     "gpg2"
     "gnupg"
@@ -57,9 +59,9 @@
     ];
     casks = 
     [ 
-    "warp"
     "slack"
     "obsidian"
+    "wezterm"
 #    "gpg-suite"
     "spotify"
 #    "raycast"

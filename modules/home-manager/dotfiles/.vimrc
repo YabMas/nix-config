@@ -20,6 +20,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'tpope/vim-commentary'
 Plug 'vim-scripts/ReplaceWithRegister'
 Plug 'dbakker/vim-paragraph-motion'
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
