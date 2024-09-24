@@ -42,6 +42,7 @@
     "borkdude/brew"
     ];
     brews = [
+"nvim"
     "node@20"
     "yarn"
     "borkdude/brew/babashka"
@@ -50,15 +51,23 @@
     "autojump"
     "gpg2"
     "gnupg"
-    "pinentry-mac"      
+    "pinentry-mac"
     "fnm"
     "clojure"
     "python-setuptools" # https://stackoverflow.com/questions/69919970/no-module-named-distutils-but-distutils-installed
     "graphviz"
     "syncthing"
+    "ripgrep"
+    "fd"
+    "luarocks"
+    "mkcert"
+    "gettext"
+    "wget"
+    "neovim-remote"
+    "lazygit"
     ];
-    casks = 
-    [ 
+    casks =
+    [
     "slack"
     "obsidian"
     "wezterm"
@@ -67,6 +76,8 @@
 #    "raycast"
     "amethyst"
 #    "keybase" -- had to install from website
+    "cljstyle"
+    "neovide"
     "nikitabobko/tap/aerospace"
     "docker"
     "caffeine"

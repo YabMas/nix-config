@@ -3,8 +3,6 @@
   home.stateVersion = "22.11";
 
   home.packages = with pkgs; [
-    ripgrep
-    fd
     curl
     less
     # nodejs_20
@@ -12,7 +10,6 @@
     cargo
     # clojure
     # babashka
-    mkcert
 #    keybase
     terraform
     gh
@@ -25,7 +22,7 @@
   home.sessionVariables = {
     PAGER = "less";
     CLICLOLOR = 1;
-    EDITOR = "lvim";
+    EDITOR = "nvim";
   };
   home.sessionPath = [ "$HOME/.local/bin" ];
   programs = {
@@ -58,8 +55,6 @@ shellAliases = {
   ls = "ls --color=auto -F";
   nixswitch = "~/SystemConfig/result/sw/bin/darwin-rebuild switch --flake ~/SystemConfig";
   nixup = "pushd ~/src/system-config; nix flake update; nixswitch; popd";
-  lvim = "/Users/jaamaask/.local/bin/lvim";
-  hw = "echo 'hello world'";
 };
 oh-my-zsh = {
       enable = true;
@@ -70,9 +65,6 @@ oh-my-zsh = {
       theme = "agnoster";
 };
   };
-  neovim = {
-    enable = true;
-};
   };
 
   home.file.".inputrc".source = ./dotfiles/inputrc;
