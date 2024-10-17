@@ -36,13 +36,18 @@
     enable = true;
     caskArgs.no_quarantine = true;
     global.brewfile = true;
-    onActivation.cleanup = "zap";
+    onActivation = {
+      cleanup = "zap";
+      upgrade = true;
+      autoUpdate = true;
+    };
     masApps = { };
     taps = [
     "borkdude/brew"
+    "spacelift-io/spacelift"
     ];
     brews = [
-"nvim"
+    "nvim"
     "node@20"
     "yarn"
     "borkdude/brew/babashka"
@@ -65,6 +70,7 @@
     "wget"
     "neovim-remote"
     "lazygit"
+    "spacelift-io/spacelift/spacectl"
     ];
     casks =
     [

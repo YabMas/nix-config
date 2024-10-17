@@ -55,13 +55,13 @@ config.keys = {
 		action = wezterm.action.SplitHorizontal({ domain = "CurrentPaneDomain" }),
 	},
 	{
-		key = '"',
+		key = "\\",
 		mods = "LEADER",
 		action = wezterm.action.SplitVertical({ domain = "CurrentPaneDomain" }),
 	},
 	{
-		key = "q",
-		mods = "LEADER",
+		key = "w",
+		mods = "SUPER",
 		action = wezterm.action.CloseCurrentPane({ confirm = true }),
 	},
 	{

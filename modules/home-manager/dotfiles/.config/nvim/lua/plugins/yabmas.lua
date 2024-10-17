@@ -35,6 +35,13 @@ return {
     "rebelot/heirline.nvim",
     opts = function(_, opts) opts.winbar = nil end,
   },
+  {
+    "junegunn/vim-easy-align",
+    config = function()
+      vim.api.nvim_set_keymap("n", "ga", "<Plug>(EasyAlign)", { noremap = false, silent = true })
+      vim.api.nvim_set_keymap("x", "ga", "<Plug>(EasyAlign)", { noremap = false, silent = true })
+    end,
+  },
   require("gitsigns").setup {
     signcolumn = false, -- Toggle with `:Gitsigns toggle_signs`
   },
