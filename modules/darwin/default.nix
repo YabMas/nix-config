@@ -45,6 +45,7 @@
     taps = [
     "borkdude/brew"
     "spacelift-io/spacelift"
+    # "d12frosted/emacs-plus"
     ];
     brews = [
     "nvim"
@@ -63,14 +64,19 @@
     "graphviz"
     "syncthing"
     "ripgrep"
+    "findutils"
     "fd"
     "luarocks"
     "mkcert"
     "gettext"
     "wget"
-    "neovim-remote"
+    "aspell"
     "lazygit"
     "spacelift-io/spacelift/spacectl"
+    # {
+    #   name = "emacs-plus@29";
+    #   args = ["with-spacemacs-icon"];
+    # }
     ];
     casks =
     [
@@ -80,14 +86,16 @@
 #    "gpg-suite"
     "spotify"
 #    "raycast"
+    "emacs"
     "amethyst"
 #    "keybase" -- had to install from website
     "cljstyle"
-    "neovide"
-    "nikitabobko/tap/aerospace"
+    # "nikitabobko/tap/aerospace"
     "docker"
     "caffeine"
     "google-drive"
+    "font-source-code-pro"
+    "font-fira-code"
     ];
   };
 }
