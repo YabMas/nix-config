@@ -17,6 +17,7 @@ return {
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
       null_ls.builtins.formatting.cljstyle,
+      -- null_ls.builtins.formatting.cljfmt,
     }
     return config -- return final config table
   end,

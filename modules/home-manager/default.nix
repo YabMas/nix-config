@@ -38,9 +38,9 @@
   git.enable = true;
   direnv.enable = true;
   java = {
-    enable = true;
-    package = pkgs.jdk17;
-#    package = pkgs.jdk11;
+    enable = false;
+    # package = pkgs.jdk17;
+    # package = pkgs.jdk11;
 #    package = pkgs.jdk8;
   };
   zsh = {

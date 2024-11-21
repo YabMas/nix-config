@@ -44,10 +44,13 @@
     masApps = { };
     taps = [
     "borkdude/brew"
+    "babashka/brew"
     "spacelift-io/spacelift"
-    # "d12frosted/emacs-plus"
+    "sdkman/tap"
+    "clojure-lsp/brew"
     ];
     brews = [
+    "sdkman-cli"
     "nvim"
     "node@20"
     "yarn"
@@ -73,17 +76,16 @@
     "aspell"
     "lazygit"
     "spacelift-io/spacelift/spacectl"
-    # {
-    #   name = "emacs-plus@29";
-    #   args = ["with-spacemacs-icon"];
-    # }
+    "babashka/brew/neil"
+    "clojure-lsp/brew/clojure-lsp-native"
     ];
     casks =
     [
+    "jetbrains-toolbox"
+    "zprint"
     "slack"
     "obsidian"
     "wezterm"
-#    "gpg-suite"
     "spotify"
 #    "raycast"
     "emacs"
