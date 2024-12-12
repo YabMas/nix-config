@@ -15,6 +15,7 @@ config.color_scheme = "Tokyo Night"
 
 config.font = wezterm.font({ family = "JetBrains Mono" })
 config.font_size = 16
+config.harfbuzz_features = { 'calt=0', 'clig=0', 'liga=0' } -- disable ligatures
 
 -- Slightly transparent and blurred background
 config.window_background_opacity = 0.9

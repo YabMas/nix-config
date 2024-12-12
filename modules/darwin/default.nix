@@ -50,7 +50,6 @@
     "clojure-lsp/brew"
     ];
     brews = [
-    "sdkman-cli"
     "nvim"
     "node@20"
     "yarn"
@@ -87,10 +86,9 @@
     "obsidian"
     "wezterm"
     "spotify"
-#    "raycast"
+    "bitwarden"
     "emacs"
     "amethyst"
-#    "keybase" -- had to install from website
     "cljstyle"
     # "nikitabobko/tap/aerospace"
     "docker"
