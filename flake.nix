@@ -21,8 +21,6 @@
         system = "aarch64-darwin";
         config.allowUnfree = true;
         config.permittedInsecurePackages = [
-   #             "nodejs-14.21.3"
-  #              "openssl-1.1.1v"
                   "nodejs-16.20.2"
               ];
       };
@@ -33,7 +31,7 @@
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
-            users.jaamaask.imports = [ ./modules/home-manager ];
+            users.yabmas.imports = [ ./modules/home-manager ];
           };
         }
       ];

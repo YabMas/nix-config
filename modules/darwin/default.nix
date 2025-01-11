@@ -1,6 +1,8 @@
 { pkgs, ... }: {
-  users.users.jaamaask.home = "/Users/jaamaask";
-  users.users.yabmaz.home = "/Users/yabmaz";
+  users.users.yabmas.home = "/Users/yabmas";
+
+  imports = [ ./dock ];
+
   # here go the darwin preferences and config items
   programs.zsh.enable = true;
   environment = {
@@ -69,33 +71,44 @@
     "findutils"
     "fd"
     "luarocks"
-    "mkcert"
+    # "mkcert"
     "gettext"
     "wget"
     "aspell"
     "lazygit"
-    "spacelift-io/spacelift/spacectl"
+    # "spacelift-io/spacelift/spacectl"
     "babashka/brew/neil"
-    "clojure-lsp/brew/clojure-lsp-native"
+    # "clojure-lsp/brew/clojure-lsp-native"
     ];
     casks =
     [
-    "jetbrains-toolbox"
+    # "jetbrains-toolbox"
     "zprint"
     "slack"
-    "obsidian"
+    # "obsidian"
     "wezterm"
     "spotify"
     "bitwarden"
-    "emacs"
-    "amethyst"
+    # "emacs"
+    # "amethyst"
     "cljstyle"
     # "nikitabobko/tap/aerospace"
-    "docker"
+    # "docker"
     "caffeine"
-    "google-drive"
+    # "google-drive"
     "font-source-code-pro"
     "font-fira-code"
+    "arc"
+    ];
+  };
+  # declarative dock
+  local = {
+    dock.enable = true;
+    dock.entries = [
+      { path = "/Applications/WezTerm.app/"; }
+      { path = "/Applications/Arc.app/"; }
+      { path = "/Applications/Slack.app/"; }
+      { path = "/Applications/Spotify.app/"; }
     ];
   };
 }

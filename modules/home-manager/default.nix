@@ -49,11 +49,11 @@
     enableAutosuggestions = true;
     syntaxHighlighting.enable = true;
     initExtra = "
-    source /Users/jaamaask/SystemConfig/modules/home-manager/dotfiles/.zshrc
+    source /Users/yabmas/SystemConfig/modules/home-manager/dotfiles/.zshrc
     ";
 shellAliases = {
   ls = "ls --color=auto -F";
-  nixswitch = "~/SystemConfig/result/sw/bin/darwin-rebuild switch --flake ~/SystemConfig";
+  nixswitch = "darwin-rebuild switch --flake ~/SystemConfig";
   nixup = "pushd ~/src/system-config; nix flake update; nixswitch; popd";
 };
 oh-my-zsh = {
