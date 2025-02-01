@@ -17,6 +17,13 @@ local function on_attach(event)
   vim.keymap.set("n", "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
   vim.keymap.set({ "n", "x" }, "<leader>lf", "<cmd>lua vim.lsp.buf.format({async = true})<cr>", opts)
   vim.keymap.set("n", "<leader>ld", toggle_diagnostics)
+
+  vim.api.nvim_create_autocmd("BufWritePre", {
+    buffer = bufnr,
+    callback = function()
+      vim.lsp.buf.format({ async = false })
+    end,
+  })
 end
 
 return {
@@ -34,7 +41,6 @@ return {
       -- Reserve a space in the gutter to avoid layout shifts
       vim.opt.signcolumn = "yes"
       vim.diagnostic.disable()
-
 
       -- language servers
       require('lspconfig').lua_ls.setup({})
