@@ -47,14 +47,14 @@
     taps = [
     "borkdude/brew"
     "babashka/brew"
-    "spacelift-io/spacelift"
-    "sdkman/tap"
-    "clojure-lsp/brew"
+    "FelixKratz/formulae"
+    "nikitabobko/tap"
+    "SDKMAN/tap"
     ];
     brews = [
     "nvim"
-    "node@20"
-    "yarn"
+      # "node"
+      # "yarn"
     "borkdude/brew/babashka"
     "borkdude/brew/clj-kondo"
     "borkdude/brew/jet"
@@ -71,34 +71,36 @@
     "findutils"
     "fd"
     "luarocks"
-    # "mkcert"
     "gettext"
     "wget"
     "aspell"
     "lazygit"
-    # "spacelift-io/spacelift/spacectl"
     "babashka/brew/neil"
-    # "clojure-lsp/brew/clojure-lsp-native"
+    "FelixKratz/formulae/borders"
+    "FelixKratz/formulae/sketchybar"
+    "SDKMAN-cli"
+    "cljfmt"
+    # "docker"
+    # "docker-compose"
     ];
     casks =
     [
     # "jetbrains-toolbox"
     "zprint"
     "slack"
+    "docker"
     # "obsidian"
     "wezterm"
     "spotify"
     "bitwarden"
-    # "emacs"
-    # "amethyst"
     "cljstyle"
-    # "nikitabobko/tap/aerospace"
-    # "docker"
+    "nikitabobko/tap/aerospace"
     "caffeine"
     # "google-drive"
     "font-source-code-pro"
     "font-fira-code"
     "arc"
+    "dbeaver-community"
     ];
   };
   # declarative dock
@@ -108,7 +110,7 @@
       { path = "/Applications/WezTerm.app/"; }
       { path = "/Applications/Arc.app/"; }
       { path = "/Applications/Slack.app/"; }
-      { path = "/Applications/Spotify.app/"; }
+      { path = "/Applications/Spotify.app/"; section = "others"; }
     ];
   };
 }

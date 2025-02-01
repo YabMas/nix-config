@@ -40,7 +40,7 @@
   java = {
     enable = false;
     # package = pkgs.jdk17;
-    # package = pkgs.jdk11;
+      # package = pkgs.jdk11;
 #    package = pkgs.jdk8;
   };
   zsh = {

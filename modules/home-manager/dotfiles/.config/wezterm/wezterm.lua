@@ -12,6 +12,7 @@ config.set_environment_variables = {
 }
 
 config.color_scheme = "Tokyo Night"
+-- config.color_scheme = "Nocturnal Winter"
 
 config.font = wezterm.font({ family = "JetBrains Mono" })
 config.font_size = 16

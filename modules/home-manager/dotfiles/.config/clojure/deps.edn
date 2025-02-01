@@ -1,0 +1,16 @@
+{:aliases
+ {:dev-yab
+  {:classpath-overrides {org.clojure/clojure nil}
+   :extra-deps {com.github.flow-storm/clojure {:mvn/version "1.12.0-3"}
+                com.github.flow-storm/flow-storm-dbg {:mvn/version "4.1.0"}}
+   :jvm-opts ["-Dclojure.storm.instrumentEnable=true"
+              "-Dclojure.storm.instrumentOnlyPrefixes=brian"]}
+  :fs-cljs
+  {:classpath-overrides {org.clojure/clojurescript nil}
+   :extra-deps {thheller/shadow-cljs {:mvn/version "2.28.18"
+                                      :exclusions [org.clojure/clojurescript]}
+                 com.github.flow-storm/clojurescript {:mvn/version "RELEASE"}
+                 com.github.flow-storm/flow-storm-inst {:mvn/version "RELEASE"}}
+   :jvm-opts ["-Dcljs.storm.instrumentOnlyPrefixes=brian"
+              "-Dcljs.storm.instrumentEnable=true"
+              "-Dflowstorm.startRecording=false"]}}}
