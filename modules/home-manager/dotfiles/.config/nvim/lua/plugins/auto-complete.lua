@@ -17,7 +17,16 @@ return {
 
       cmp.setup({
         sources = {
+          { name = 'path' },
           { name = 'nvim_lsp' },
+        },
+        matching = {
+          disallow_fuzzy_matching = false,
+          disallow_fullfuzzy_matching = false,
+          disallow_partial_fuzzy_matching = false,
+          disallow_partial_matching = false,
+          disallow_prefix_unmatching = false,
+          disallow_symbol_nonprefix_matching = false,
         },
         snippet = {
           expand = function(args) vim.snippet.expand(args.body) end,
@@ -43,4 +52,8 @@ return {
     end
   },
   { 'hrsh7th/cmp-nvim-lsp' },
+  {
+    'hrsh7th/cmp-path',
+    dependencies = { 'nvim-cmp' }
+  }
 }
