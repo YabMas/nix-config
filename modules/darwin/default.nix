@@ -1,8 +1,6 @@
 { pkgs, ... }: {
   users.users.yabmas.home = "/Users/yabmas";
 
-  imports = [ ./dock ];
-
   # here go the darwin preferences and config items
   programs.zsh.enable = true;
   environment = {
@@ -55,6 +53,7 @@
     "nvim"
       # "node"
       # "yarn"
+    # "clojure-lsp"
     "borkdude/brew/babashka"
     "borkdude/brew/clj-kondo"
     "borkdude/brew/jet"
@@ -86,6 +85,7 @@
     casks =
     [
     # "jetbrains-toolbox"
+    "ngrok"
     "zprint"
     "slack"
     "docker"
@@ -103,14 +103,14 @@
     "dbeaver-community"
     ];
   };
-  # declarative dock
-  local = {
-    dock.enable = true;
-    dock.entries = [
-      { path = "/Applications/WezTerm.app/"; }
-      { path = "/Applications/Arc.app/"; }
-      { path = "/Applications/Slack.app/"; }
-      { path = "/Applications/Spotify.app/"; section = "others"; }
-    ];
-  };
+  # # declarative dock
+  # local = {
+  #   dock.enable = true;
+  #   dock.entries = [
+  #     { path = "/Applications/WezTerm.app/"; }
+  #     { path = "/Applications/Arc.app/"; }
+  #     { path = "/Applications/Slack.app/"; }
+  #     { path = "/Applications/Spotify.app/"; section = "others"; }
+  #   ];
+  # };
 }
