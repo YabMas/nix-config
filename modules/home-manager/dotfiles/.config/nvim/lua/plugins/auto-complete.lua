@@ -62,12 +62,18 @@ return {
         desc = "Highlight symbol under cursor on CursorHold"
       })
 
+      -- Auto format on save
+      vim.api.nvim_create_autocmd("BufWritePre", {
+        group = "CocGroup",
+        pattern = "*",
+        command = "silent call CocAction('format')",
+        desc = "Auto format before save"
+      })
+
       -- Symbol renaming
       vim.keymap.set("n", "<leader>lR", "<Plug>(coc-rename)", keymap_opts)
 
-      -- Formatting selected code
-      vim.keymap.set("x", "<leader>lf", "<Plug>(coc-format-selected)", keymap_opts)
-      vim.keymap.set("n", "<leader>lf", "<Plug>(coc-format-selected)", keymap_opts)
+      vim.keymap.set("n", "<leader>ln", "<cmd>call CocAction('runCommand', 'lsp-clojure-clean-ns')<CR>", keymap_opts)
     end,
   }
 }
